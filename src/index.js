@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import InfoCard from './components/InfoCard'
+import TriviaCard from './components/TriviaCard'
 
-ReactDom.render(<InfoCard title="Test" description="lorem ipsum" imgPath="./images/test.png" />, document.getElementById("root"));
+ReactDom.render(<TriviaCard 
+    title="Baseball" 
+    question="Who holds the record for most career stolen bases?" 
+    hint="This player stole a single-season record of 130 bases in 1983 as a member of the Oakland Athletics"
+    imgPath="./images/baseball.png" />, 
+    document.getElementById("root"));
